@@ -8,39 +8,68 @@
             margin-right: auto;
             width: auto;}
             #far-top-left{margin-left: -30px;}
-        #mid-top-right{margin-left:1000px;}
-        a{font-family: arial, sans-serif;
+        #mid-top-right{margin-left:950px;}
+        .top-items{font-family: arial, sans-serif;
         opacity: 0.75;
         font-size:13px;
         display: inline-flex;
         padding:5px;
         margin-top: 15px;}
         #search-bar{
+            border-radius: 15%;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: auto;}
-        .button{
+            width: 400px;
+            height:30px;}
+        .btn-group{
+            padding: 10px;
             display: flex;
   justify-content: center;
   align-items: center;
+  }
+  #sign-in{background-color: dodgerblue;
+  color:white;
+  border-radius: 0%;}
+  footer{position: absolute;
+  bottom: 5px;
+  padding: 10px;
+  background-color:lightgray;
+  }
+  #privacy{margin-left:800px;}
+  .bottom-items{font-family: arial, sans-serif;
+        opacity: 0.75;
+        font-size:13px;
         }
     </style>
     <nav>
         <ul>
-            <a id=far-top-left>About</a>
-            <a id=mid-top-left>Store</a>
-            <a id=mid-top-right>Gmail</a>
-            <a id=far-top-right>Images</a>
+            <a id=far-top-left class=top-items>About</a>
+            <a id=mid-top-left class=top-items>Store</a>
+            <a id=mid-top-right class=top-items>Gmail</a>
+            <a id=far-top-right class=top-items>Images</a>
+        
+                <button id=sign-in class=top-items>Sign In</button>
         </ul>
             </nav>
     <div> <img id=logo src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png alt=Google Logo>
     </div>
+    <br><br>
     <div>
-        <input type="text" id=search-bar>
+        <input type="text" id="search-bar" placeholder="Search">
     </div>
-    <div>
-    <button class=button>Google Search</button>
-<button class=button>I'm Feeling Lucky</button>
-</div>
+    <br>
+    <div class="btn-group">
+    <button>Google Search</button>
+<button>I'm Feeling Lucky</button>
+    </div>
+<footer>
+    <a class=bottom-items>Advertising</a>  
+    <a class=bottom-items>Business</a>
+    <a class=bottom-items>About</a>
+    <a class=bottom-items>How search works</a>
+    <a id=privacy class=bottom-items>Privacy</a>
+    <a class=bottom-items>Terms</a>
+    <a class=bottom-items>Settings</a>
+</footer>
         </html>
